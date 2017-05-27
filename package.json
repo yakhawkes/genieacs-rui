@@ -1,0 +1,7 @@
+{
+  "name": "genieacs-rui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "shawkes <shawkes@gmail.com>",
+  "license": "MIT"
+}
