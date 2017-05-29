@@ -2,7 +2,6 @@ const axios = require('axios')
 
 module.exports = {
   fetchDevices(serial) {
-    if (!serial) return null
     const encodedURI = window.encodeURI('/api/devices');
 
     return axios.get(encodedURI)
