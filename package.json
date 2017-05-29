@@ -5,7 +5,9 @@
   "author": "shawkes <shawkes@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "startnode": "node server.js",
+    "dev": "webpack && npm start"
   },
   "babel": {
     "presets": ["env", "react"]
