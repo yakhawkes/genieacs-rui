@@ -6,9 +6,11 @@ var BUILD_DIR = path.resolve(__dirname, 'dist')
 var APP_DIR = path.resolve(__dirname, 'src/client/app')
 
 var config = {
-  entry: APP_DIR + '/index.jsx',
+  context: APP_DIR,
+  entry: ["webpack-hot-middleware/client", APP_DIR + '/index.jsx'],
   output: {
     path: BUILD_DIR,
+    publicPath: "/",
     filename: 'index.js'
   },
   module : {
@@ -28,7 +30,10 @@ var config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: APP_DIR + '/index.html'
-    })
+    }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 }
 

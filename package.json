@@ -5,18 +5,23 @@
   "author": "shawkes <shawkes@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot",
+    "startwebpack": "webpack-dev-server --inline --hot",
     "startnode": "node server.js",
+    "start": "babel-node server.js",
     "dev": "webpack && npm start"
   },
   "babel": {
-    "presets": ["env", "react"]
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
@@ -25,6 +30,8 @@
     "html-webpack-plugin": "^2.28.0",
     "style-loader": "^0.18.1",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-hot-middleware": "^2.18.0"
   }
 }
