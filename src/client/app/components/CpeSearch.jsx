@@ -10,13 +10,11 @@ class CpeSearch extends React.Component {
     super(props)
     this.state = {
       cpeSerial: '',
-      devices: null,
+      devices: [],
     };
     this.updateDevices = this.updateDevices.bind(this)
   }
-  componentDidMount() {
-    this.updateDevices(this.state.cpeSerial)
-  }
+
   updateDevices(serialNumber) {
     this.setState(function () {
       return {
