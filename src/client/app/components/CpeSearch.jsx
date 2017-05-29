@@ -1,6 +1,8 @@
 const React = require('react')
 const PropTypes = require('prop-types')
 const CpeSearchBox = require('./CpeSearchBox.jsx')
+const CpeList = require('./CpeList.jsx')
+
 const api = require('../api')
 
 class CpeSearch extends React.Component {
@@ -11,7 +13,7 @@ class CpeSearch extends React.Component {
       devices: null,
     };
     this.updateDevices = this.updateDevices.bind(this)
-    }
+  }
   componentDidMount() {
     this.updateDevices(this.state.cpeSerial)
   }
@@ -37,11 +39,11 @@ class CpeSearch extends React.Component {
     return (
       <div>
         <CpeSearchBox
-          onSubmit = {this.updateDevices}
-        />{this.state.cpeSerial}<br/>
+          onSubmit={this.updateDevices}
+        />
         {!this.state.devices
           ? <p>LOADING!</p>
-          : this.state.devices.length}
+          : <CpeList devices={this.state.devices} />}
       </div>
     )
   }
