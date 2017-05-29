@@ -24,6 +24,10 @@ var router = require('express').Router();
    });
  })
 
+ router.get("/devices", (req, res) =>{
+   res.json(require('./tests/fakedevices.json'));
+ })
+
 app.use('/api', router)
 
 app.get("*", (req, res, next) => {

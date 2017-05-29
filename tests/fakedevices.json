@@ -1,0 +1,44 @@
+[
+  {
+  	"_id": "E0B9E5-MediaAccess%20TG589vac%20v2-CP1629VA5G4",
+  	"_registered": {
+  		"$date": "2017-03-13T16:08:12.222Z"
+  	},
+  	"_deviceId": {
+  		"_Manufacturer": "Technicolor",
+  		"_OUI": "E0B9E5",
+  		"_ProductClass": "MediaAccess TG589vac v2",
+  		"_SerialNumber": "CP1629VA5G4"
+  	},
+  	"_lastInform": {
+  		"$date": "2017-03-13T16:08:12.275Z"
+  	},
+  	"_lastBoot": {
+  		"$date": "2017-03-13T16:08:12.275Z"
+  	},
+  	"_lastBootstrap": {
+  		"$date": "2017-03-13T16:08:12.275Z"
+  	}
+  },
+  {
+  	"_id": "E0B9E5-MediaAccess%20TG589vac%20v2-CP1629VA5G5",
+  	"_registered": {
+  		"$date": "2017-03-14T16:08:12.222Z"
+  	},
+  	"_deviceId": {
+  		"_Manufacturer": "Technicolor",
+  		"_OUI": "E0B9E5",
+  		"_ProductClass": "MediaAccess TG588vac v2",
+  		"_SerialNumber": "CP1629VA5G5"
+  	},
+  	"_lastInform": {
+  		"$date": "2017-03-14T16:04:12.275Z"
+  	},
+  	"_lastBoot": {
+  		"$date": "2017-03-14T16:04:12.275Z"
+  	},
+  	"_lastBootstrap": {
+  		"$date": "2017-03-14T16:08:14.275Z"
+  	}
+  }
+]
