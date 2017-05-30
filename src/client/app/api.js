@@ -7,4 +7,10 @@ module.exports = {
     return axios.get(encodedURI)
       .then(response => response.data)
   },
+  fetchTasks(serial) {
+    const encodedURI = window.encodeURI('/api/tasks');
+
+    return axios.get(encodedURI)
+      .then(response => response.data)
+  },
 }

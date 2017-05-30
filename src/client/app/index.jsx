@@ -9,16 +9,11 @@ import {
 require('./index.css')
 
 const CpeSearch = require('./components/CpeSearch.jsx')
+const Tasks = require('./components/Tasks.jsx')
 
 if (module.hot) {
   module.hot.accept()
 }
-
-const Tasks = () => (
-  <div>
-    <h2>tasks</h2>
-  </div>
-)
 
 const App = () => (
   <Router>
