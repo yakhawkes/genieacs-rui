@@ -6,12 +6,12 @@ import config from './../../webpack.config'
 import webpackHotMiddleware from "webpack-hot-middleware"
 
 const app = express()
-const DIST_DIR = path.join(__dirname, 'dist')
+const DIST_DIR = path.join(__dirname, '../../dist')
 const PORT = 3000
 const compiler = webpack(config)
 
 app.use(webpackDevMiddleware(compiler, {
-  publicPath: config.output.publicPath
+  publicPath: config.output.publicPath,
 }))
 app.use(webpackHotMiddleware(compiler))
 
@@ -25,7 +25,7 @@ router.get('/', function(req, res) {
 })
 
 router.get('/devices', (req, res) => {
-  res.json(require('./../../tests/fakedevices.json'));
+  res.json(require('./../../tests/fakedevices.json'))
 })
 
 router.get('/tasks', (req, res) => {
@@ -44,6 +44,7 @@ app.get('*', (req, res, next) => {
     res.set('content-type', 'text/html');
     res.send(result)
     res.end()
+    return true
   })
 })
 

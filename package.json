@@ -8,7 +8,7 @@
     "startwebpack": "webpack-dev-server --inline --hot",
     "startnode": "node server.js",
     "startbabel": "babel-node server.js",
-    "start": "nodemon src/server/server.js --exec babel-node --presets es2015,react",
+    "start": "nodemon --watch src/server src/server/server.js --exec babel-node --presets es2015,react",
     "dev": "webpack && npm start"
   },
   "babel": {
