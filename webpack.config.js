@@ -1,40 +1,40 @@
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-var BUILD_DIR = path.resolve(__dirname, 'dist')
-var APP_DIR = path.resolve(__dirname, 'src/client/app')
+const BUILD_DIR = path.resolve(__dirname, 'dist')
+const APP_DIR = path.resolve(__dirname, 'src/client/app')
 
-var config = {
+const config = {
   context: APP_DIR,
-  entry: ["webpack-hot-middleware/client", APP_DIR + '/index.jsx'],
+  entry: ['webpack-hot-middleware/client', `${APP_DIR}/index.jsx`],
   output: {
     path: BUILD_DIR,
-    publicPath: "/",
-    filename: 'index.js'
+    publicPath: '/',
+    filename: 'index.js',
   },
-  module : {
-    rules : [
+  module: {
+    rules: [
       {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        use : 'babel-loader'
+        test: /\.jsx?/,
+        include: APP_DIR,
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
-        include : APP_DIR,
-        use: [ 'style-loader', 'css-loader' ]
+        include: APP_DIR,
+        use: ['style-loader', 'css-loader'],
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: APP_DIR + '/index.html'
+      template: `${APP_DIR}/index.html`,
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ]
+    new webpack.NoEmitOnErrorsPlugin(),
+  ],
 }
 
 module.exports = config
