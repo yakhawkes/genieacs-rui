@@ -32,6 +32,10 @@ router.get('/tasks', (req, res) => {
   res.json(require('./../../tests/faketasks.json'));
 })
 
+router.get('/files', (req, res) => {
+  res.json(require('./../../tests/fakefiles.json'));
+})
+
 app.use('/api', router)
 
 app.get('*', (req, res, next) => {

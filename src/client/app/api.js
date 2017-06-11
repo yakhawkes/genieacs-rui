@@ -13,4 +13,10 @@ module.exports = {
     return axios.get(encodedURI)
       .then(response => response.data)
   },
+  fetchFiles() {
+    const encodedURI = window.encodeURI('/api/files');
+
+    return axios.get(encodedURI)
+      .then(response => response.data)
+  },
 }

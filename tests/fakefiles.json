@@ -1,0 +1,153 @@
+[
+	{
+		"_id": "58341b1d97ac506d1c77fb54",
+		"filename": "04BF6D-VMG1312-B10D_SSE_0.config",
+		"contentType": "binary/octet-stream",
+		"length": 79833,
+		"chunkSize": 261120,
+		"uploadDate": "2016-11-22T10:17:01.164Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "04BF6D",
+			"productClass": "VMG1312-B10D",
+			"version": "1"
+		},
+		"md5": "8bc8ed9fc56ebdec4027400d4736ff20"
+	}, {
+		"_id": "5846b410c4e034533b1df8ae",
+		"filename": "04BF6D-VMG1312-B10D_TEST_1.config",
+		"contentType": "binary/octet-stream",
+		"length": 83457,
+		"chunkSize": 261120,
+		"uploadDate": "2016-12-06T12:50:24.630Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "04BF6D",
+			"productClass": "VMG1312-B10D",
+			"version": "1"
+		},
+		"md5": "2f26157e88d2d0a4b1e41423e1ffe1b3"
+	}, {
+		"_id": "58493d1918e890461b648172",
+		"filename": "04BF6D-VMG1312-B10D_TEST_2.config",
+		"contentType": "binary/octet-stream",
+		"length": 0,
+		"chunkSize": 261120,
+		"uploadDate": "2016-12-08T10:59:37.980Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "04BF6D",
+			"productClass": "VMG1312-B10D",
+			"version": "1"
+		},
+		"md5": "d41d8cd98f00b204e9800998ecf8427e"
+	}, {
+		"_id": "584942b181dc0d461dff6ce3",
+		"filename": "04BF6D-VMG1312-B10D_TEST_3.config",
+		"contentType": "binary/octet-stream",
+		"length": 83457,
+		"chunkSize": 261120,
+		"uploadDate": "2016-12-08T11:23:29.852Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "04BF6D",
+			"productClass": "VMG1312-B10D",
+			"version": "1"
+		},
+		"md5": "2f26157e88d2d0a4b1e41423e1ffe1b3"
+	}, {
+		"_id": "58513307a7aeca5594cd7931",
+		"filename": "04BF6D-VMG1312-B10D_VPN201_0.config",
+		"contentType": "binary/octet-stream",
+		"length": 86006,
+		"chunkSize": 261120,
+		"uploadDate": "2016-12-14T11:54:47.634Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "04BF6D",
+			"productClass": "VMG1312-B10D",
+			"version": "1"
+		},
+		"md5": "634b3ebefc3fce4d7236372f4b287e2d"
+	}, {
+		"_id": "58515257ffa1d37b3d00f7ed",
+		"filename": "04BF6D-VMG1312-B10D_VPN201_1.config",
+		"contentType": "binary/octet-stream",
+		"length": 85843,
+		"chunkSize": 261120,
+		"uploadDate": "2016-12-14T14:08:23.381Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "04BF6D",
+			"productClass": "VMG1312-B10D",
+			"version": "1"
+		},
+		"md5": "e9a5b1c4ee0408137ebfc6acdcb205b2"
+	}, {
+		"_id": "58ff0f599c8dbd7a00e147e6",
+		"filename": "E0B9E5-MediaAccess%20TG589vac%20v2_default_0.STS",
+		"contentType": "binary/octet-stream",
+		"length": 758,
+		"chunkSize": 261120,
+		"uploadDate": "2017-04-25T08:56:57.131Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "E0B9E5",
+			"productClass": "MediaAccess%20TG589vac%20v2",
+			"version": "1"
+		},
+		"md5": "8e52e88a8488750afcda34ceea4c0849"
+	}, {
+		"_id": "59030d663172cc73e48d2df5",
+		"filename": "E0B9E5-MediaAccess%20TG589vac%20v2_default_1.STS",
+		"contentType": "binary/octet-stream",
+		"length": 495,
+		"chunkSize": 261120,
+		"uploadDate": "2017-04-28T09:37:42.974Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "E0B9E5",
+			"productClass": "MediaAccess%20TG589vac%20v2",
+			"version": "1"
+		},
+		"md5": "f61d7d02b560a039506f3bfe568375c7"
+	}, {
+		"_id": "5927e21086f82e4d5be31abc",
+		"filename": "E0B9E5-Media%20Access%20TG589vac%20v2_default_0.STS",
+		"contentType": "binary/octet-stream",
+		"length": 495,
+		"chunkSize": 261120,
+		"uploadDate": "2017-05-26T08:06:40.171Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "E0B9E5",
+			"productClass": "Media%20Access%20TG589vac%20v2",
+			"version": "1"
+		},
+		"md5": "f61d7d02b560a039506f3bfe568375c7"
+	}, {
+		"_id": "5927e254c9df3008c3cc632e",
+		"filename": "E0B9E5-Media%20Access%20TG588v%20v2_default_0.STS",
+		"contentType": "binary/octet-stream",
+		"length": 495,
+		"chunkSize": 261120,
+		"uploadDate": "2017-05-26T08:07:48.566Z",
+		"aliases": null,
+		"metadata": {
+			"fileType": "3 Vendor Configuration File",
+			"oui": "E0B9E5",
+			"productClass": "Media%20Access%20TG588v%20v2",
+			"version": "1"
+		},
+		"md5": "f61d7d02b560a039506f3bfe568375c7"
+	}
+]
