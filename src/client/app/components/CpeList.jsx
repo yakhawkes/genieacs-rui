@@ -22,3 +22,17 @@ function CpeList(props) {
 }
 
 module.exports = CpeList
+
+CpeList.propTypes = {
+  devices: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string.isRequired,
+      _deviceId: PropTypes.shape({
+        _Manufacturer: PropTypes.string.isRequired,
+        _OUI: PropTypes.string.isRequired,
+        _ProductClass: PropTypes.string.isRequired,
+        _SerialNumber: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  ).isRequired,
+}

@@ -23,3 +23,14 @@ function SetParameterValues(props) {
 }
 
 module.exports = SetParameterValues
+
+SetParameterValues.propTypes = {
+  name: PropTypes.string.isRequired,
+  device: PropTypes.string.isRequired,
+  parameterValues: PropTypes.arrayOf(
+    PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]),
+  ).isRequired,
+}

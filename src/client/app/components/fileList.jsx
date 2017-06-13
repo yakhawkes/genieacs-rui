@@ -21,5 +21,19 @@ function FileList(props) {
     </ul>
   )
 }
-
 module.exports = FileList
+
+FileList.propTypes = {
+  files: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string.isRequired,
+      filename: PropTypes.string.isRequired,
+      metadata: PropTypes.shape({
+        fileType: PropTypes.string.isRequired,
+        oui: PropTypes.string.isRequired,
+        productClass: PropTypes.string.isRequired,
+        version: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+  ).isRequired,
+}

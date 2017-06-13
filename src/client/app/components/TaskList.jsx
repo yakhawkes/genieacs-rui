@@ -22,3 +22,12 @@ function TaskList(props) {
 }
 
 module.exports = TaskList
+
+FileList.propTypes = {
+  files: PropTypes.arrayOf(
+    PropTypes.shape({
+      _id: PropTypes.string,
+      name: PropTypes.string,
+    }),
+  ).isRequired,
+}
