@@ -23,8 +23,8 @@ function TaskList(props) {
 
 module.exports = TaskList
 
-FileList.propTypes = {
-  files: PropTypes.arrayOf(
+TaskList.propTypes = {
+  tasks: PropTypes.arrayOf(
     PropTypes.shape({
       _id: PropTypes.string,
       name: PropTypes.string,
