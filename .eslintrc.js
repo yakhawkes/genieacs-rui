@@ -13,7 +13,7 @@ module.exports = {
     ],
     "rules": {
       "semi": "off",
-      "no-underscore-dangle:": "off",
+      "no-underscore-dangle": "off",
       "arrow-body-style": ["error", "as-needed"],
     }
 };
