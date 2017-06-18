@@ -8,6 +8,7 @@ import {
 
 require('./index.css')
 
+const Navigation = require('./components/navigation.jsx')
 const CpeSearch = require('./components/CpeSearch.jsx')
 const Tasks = require('./components/Tasks.jsx')
 const Files = require('./components/Files.jsx')
@@ -20,11 +21,7 @@ const App = () => (
   <Router>
     <div>
       <h1>Genie!</h1>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/tasks">Tasks</Link></li>
-        <li><Link to="/files">Files</Link></li>
-      </ul>
+      <Navigation />
 
       <hr />
 
