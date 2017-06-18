@@ -10,7 +10,7 @@ function TaskList(props) {
   }
   return (
     <ul>
-      {props.tasks.map(function (task, index) {
+      {props.tasks.map((task) => {
         return (
           <li key={task._id}>
             {taskComponents[task.name](task)}

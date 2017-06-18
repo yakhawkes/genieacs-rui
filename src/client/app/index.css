@@ -14,3 +14,15 @@ body {
 .navigation-active {
   font-weight: bold;
 }
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
