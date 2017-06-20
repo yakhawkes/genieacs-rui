@@ -3,22 +3,26 @@ const PropTypes = require('prop-types')
 
 function FileList(props) {
   return (
-    <ul>
-      {props.files.map(function (file, index) {
-        return (
-          <li key={file._id}>
-            <ul>
-              <li>{file._id}</li>
-              <li>{file.filename}</li>
-              <li>{file.metadata.fileType}</li>
-              <li>{file.metadata.oui}</li>
-              <li>{file.metadata.productClass}</li>
-              <li>{file.metadata.version}</li>
-            </ul>
-          </li>
-        )
-      })}
-    </ul>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>OUI</th>
+        <th>Model</th>
+        <th>Version</th>
+      </tr>
+      {props.files.map(file =>
+        (
+          <tr key={file._id}>
+            <td>{file.filename}</td>
+            <td>{file.metadata.fileType}</td>
+            <td>{file.metadata.oui}</td>
+            <td>{file.metadata.productClass}</td>
+            <td>{file.metadata.version}</td>
+          </tr>
+        ),
+      )}
+    </table>
   )
 }
 module.exports = FileList
